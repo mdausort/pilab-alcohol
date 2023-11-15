@@ -19,6 +19,8 @@ dependencies = ['xlsxwriter',
                 'scipy'
 ]
 dynamic = ["version"]
+[tool.setuptools.dynamic]
+version = {attr = "pilab_alcohol.__version__"}
 
 [tool.setuptools.packages.find]
 where = ["src"]
